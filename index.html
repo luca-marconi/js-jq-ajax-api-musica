@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fullwidth">
+			<header>
+				<div class="container">
+					<img src="img/logo.png" alt="">
+				</div>
+			</header>
+			<div class="container container-select">
+				<select class="selettore-genere" name="">
+					<option value="">Scegli Genere</option>
+					<option value="pop">Pop</option>
+					<option value="jazz">Jazz</option>
+					<option value="rock">Rock</option>
+					<option value="metal">Metal</option>
+				</select>
+			</div>
+			<div class="container container-card">
+				<!-- <div class="card" data-genere="{{genere}}"> -->
+					<!-- <img src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
+					<h3>New Jersey</h3>
+					<span>Bon Jovi</span>
+					<span>1988</span> -->
+				</div>
+			</div>
+		</div>
+
+
+		<script id="card-template" type="text/x-handlebars-template">
+			<div class="card" data-genere="{{genere}}">
+				<img src="{{immagineAlbum}}" alt="{{nomeAlbum}} cover">
+				<h3>{{nomeAlbum}}</h3>
+				<span>{{autore}}</span>
+				<span>{{anno}}</span>
+			</div>
+		</script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
